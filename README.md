@@ -1,5 +1,4 @@
 # A_star_algorithm_on_3D_grid
-
 <a name="br1"></a>CSCI-561 - Spring 2023 - Foundations of Artificial Intelligence
  Homework 1
 
@@ -144,8 +143,8 @@ specified in every cell of the WxH map. If E is a negative integer, this means t
 height |E| in that cell. If E is a positive integer, the value represents the elevation of that cell. For
 example:
 
-10 20 -30
-12 13 40
+10 20 -30<br>
+12 13 40<br>
 
 is a map with W=3 columns and H=2 rows, and each cell contains an E value (in arbitrary units).
 By convention, we will use North (N), East (E), South (S), West (W) as shown above to describe
@@ -306,15 +305,15 @@ the elevation we approach it from
 
 For example:
 
-A\* 8 6 4 4
-5 2 2 1 6 3
+A\* 8 6 4 4<br>
+5 2 2 1 6 3<br>
 
--10 40 34 21 42 37 18 7
--20 10 5 27 -6 5 2 0
--30 8 17 -3 -4 -1 0 4
--25 -4 12 14 -1 9 6 9
--15 -9 46 6 25 11 31 -21
--5 -6 -3 -7 0 25 53 -42
+-10 40 34 21 42 37 18 7<br>
+-20 10 5 27 -6 5 2 0<br>
+-30 8 17 -3 -4 -1 0 4<br>
+-25 -4 12 14 -1 9 6 9<br>
+-15 -9 46 6 25 11 31 -21<br>
+-5 -6 -3 -7 0 25 53 -42<br>
 
 
 
@@ -339,8 +338,8 @@ a rescue in this case. J
 
 For example, output.txt may contain:
 
-4,4 3,3 2,2 2,1
-4,4 5,3 6,3
+4,4 3,3 2,2 2,1<br>
+4,4 5,3 6,3<br>
 
 Here the first line is a sequence of five X,Y locations which trace the path from the starting
 point (4,4) to the first settling site (1,1). Note how both the starting location and the settling
@@ -349,12 +348,12 @@ trace the path from the starting point (4,4) to the second possible settling sit
 
 The first path looks like this:
 
--10 40 34 21 42 37 18 7
--20 10 5 27 -6 5 2 0
--30 8 17 -3 -4 -1 0 4
--25 -4 12 14 -1 9 6 9
--15 -9 46 6 25 11 31 -21
--5 -6 -3 -7 0 25 53 -42
+-10 40 34 21 42 37 18 7<br>
+-20 10 5 27 -6 5 2 0<br>
+-30 8 17 -3 -4 -1 0 4<br>
+-25 -4 12 14 -1 9 6 9<br>
+-15 -9 46 6 25 11 31 -21<br>
+-5 -6 -3 -7 0 25 53 -42<br>
 
 With the starting point shown in green, the lodge sites in red, and each traversed cell in between
 in yellow. Note how one could have thought of a perhaps shorter path: 4,4 4,3 3,2 2,1
@@ -366,12 +365,12 @@ blocked by the tree in 3,2.
 
 <a name="br9"></a>And the second path looks like this:
 
--10 40 34 21 42 37 18 7
--20 10 5 27 -6 5 2 0
--30 8 17 -3 -4 -1 0 4
--25 -4 12 14 -1 9 6 9
--15 -9 46 6 25 11 31 -21
--5 -6 -3 -7 0 25 53 -42
+-10 40 34 21 42 37 18 7<br>
+-20 10 5 27 -6 5 2 0<br>
+-30 8 17 -3 -4 -1 0 4<br>
+-25 -4 12 14 -1 9 6 9<br>
+-15 -9 46 6 25 11 31 -21<br>
+-5 -6 -3 -7 0 25 53 -42<br>
 
 Notes and hints:
 
@@ -399,17 +398,17 @@ Example 1:
 
 For this input.txt:
 
-BFS\
-2 2 0 0\
-5 1\
-\
-1 1\
-\
-0 -10\
--10 -20\
-\
+BFS<br>
+2 2 0 0<br>
+5 1<br>
+
+1 1<br>
+
+0 -10<br>
+-10 -20<br>
+
 the only possible correct output.txt is:
-\
+
 FAIL
 
 
@@ -419,32 +418,32 @@ FAIL
 
 For this input.txt:
 
-UCS
-5 3 0 0
-5 1
+UCS<br>
+5 3 0 0<br>
+5 1<br>
 
-4 1
+4 1<br>
 
-1 5 1 -1 -2 \
-6 2 4 10 3 \
-9 8 -10 -20 40\
+1 5 1 -1 -2<br>
+6 2 4 10 3<br>
+9 8 -10 -20 40<br>
 
 one possible correct output.txt is:
 
-0,0 1,0 2,0 3,0 4,1
+0,0 1,0 2,0 3,0 4,1<br>
 
 Example 3:
 
 For this input.txt:
 
-A\* 5 4 0 1
-3 1 4 3
+A\* <br>5 4 0 1<br>
+3 1 4 3<br>
 
-20 2 1 -2 -10
--8 1 10 2 -20
-9 -1 4 15 11
-6 -5 1 1 -1
+20 2 1 -2 -10<br>
+-8 1 10 2 -20<br>
+9 -1 4 15 11<br>
+6 -5 1 1 -1<br>
 
 one possible correct output.txt is:
 
-0,1 1,1 2,2 3,3 4,3
+0,1 1,1 2,2 3,3 4,3<br>
