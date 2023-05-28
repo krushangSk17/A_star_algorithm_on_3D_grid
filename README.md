@@ -399,17 +399,17 @@ Example 1:
 
 For this input.txt:
 
-BFS
-2 2 0 0
-5 1
-
-1 1
-
-0 -10
--10 -20
-
+BFS\
+2 2 0 0\
+5 1\
+\
+1 1\
+\
+0 -10\
+-10 -20\
+\
 the only possible correct output.txt is:
-
+\
 FAIL
 
 
@@ -425,9 +425,9 @@ UCS
 
 4 1
 
-1 5 1 -1 -2
-6 2 4 10 3
-9 8 -10 -20 40
+1 5 1 -1 -2 \
+6 2 4 10 3 \
+9 8 -10 -20 40\
 
 one possible correct output.txt is:
 
